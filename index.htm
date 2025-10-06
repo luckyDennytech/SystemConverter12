@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Convertion Base Tool</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>🧮 lucky Base Tool</h2>
+
+
+        <div>
+            <b>1. Pick base:</b><br>
+            <select id="base">
+        <option value="2">Binary</option>
+        <option value="8">Octal</option>
+        <option value="10" selected>Decimal</option>
+        <option value="16">Hex</option>
+      </select>
+        </div>
+
+
+        <div>
+            <b>2. What do you want to do?</b><br>
+            <select id="mode" onchange="showInputs()">
+        <option value="convert">Conversion</option>
+        <option value="arith">Arithmetic</option>
+      </select>
+        </div>
+
+
+        <div id="inputs"></div>
+
+        <button onclick="run()">Go</button>
+
+        <div id="out" class="out"></div>
+    </div>
+
+    <script src="arithmetic.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
+</body>
+
+</html>

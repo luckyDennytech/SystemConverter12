@@ -1,0 +1,20 @@
+{
+    "name": "Dennis Base Tool",
+    "short_name": "BaseTool",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#063358",
+    "theme_color": "#4b0082",
+    "orientation": "portrait",
+    "icons": [{
+            "src": "Lucky Base Tool.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
